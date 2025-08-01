@@ -26,7 +26,7 @@ if st.button("salvar info do usuario"):
                     'foto' : st.user.picture,
                     'email' : st.user.email,
                     'time' : datetime.now()}
-    db.collection(colecao).add({'nome': nome})
+    db.collection(colecao).add({iunformacoes})
     st.write(f"Criado com ID: {st.user.email}")
     st.write("informações salvas cm sucesso")
 
