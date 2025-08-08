@@ -28,7 +28,7 @@ if st.button("salvar info do usuario"):
                     'time': datetime.now()}
     db.collection(colecao).add(informacoes)
     st.write(f"Criado com ID: {st.user.email}")
-    st.write("informações salvas cm sucesso")
+    st.write("informações salvas com sucesso")
 
 # READ - Ler documentos  
 st.header("READ")
